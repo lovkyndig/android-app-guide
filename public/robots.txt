@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://android-app-guide.vercel.app/sitemap.xml
+Crawl-delay: 10

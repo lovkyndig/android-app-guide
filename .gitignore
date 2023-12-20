@@ -1,0 +1,33 @@
+# No need to have the following files on GitHub and Vercel.
+# Standard
+node_modules
+*.log*
+.env
+
+# Using .npmrc in localhost to publish package to GitHub
+.npmrc
+
+# dev, build and generate
+.nuxt
+.output
+dist
+
+# Playground
+.playground/.nuxt
+.playground/.output
+.playground/dist
+.playground/node_modules
+.playground/assets/icons
+
+# Yarn
+yarn.lock
+
+# Service-Worker
+public/sw*
+public/workbox*
+
+# Original images (converted to webp)
+public/convert
+
+# bubblewrap
+bubblewrap

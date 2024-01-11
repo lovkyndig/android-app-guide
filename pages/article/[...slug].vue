@@ -81,7 +81,7 @@ const showSearchModal = useState('showSearchModal')
           :class="showCatalog ? 'text-purple-500 bg-purple-100 hover:bg-purple-50 border-purple-200' : 'text-gray-500 bg-white hover:bg-gray-100 border-gray-200'"
           @click="showCatalog = !showCatalog"
         >
-          <svgo-entypo-list class="w-5 h-5" :font-controlled="false" />
+          <Icon name="entypo:list" class="w-5 h-5" />
         </button>
       </template>
       <MarkdownPost
@@ -112,7 +112,7 @@ const showSearchModal = useState('showSearchModal')
           @click="showCatalog = !showCatalog"
         >
           <div class="flex flex-col justify-center items-center gap-1">
-            <svgo-entypo-list class="w-6 h-6" :font-controlled="false" />
+            <Icon name="entypo:list" class="w-6 h-6" />
             <p class="text-xs">
               Catalog
             </p>
@@ -121,7 +121,7 @@ const showSearchModal = useState('showSearchModal')
       </template>
     </NuxtLayout>
     <!-- *****************************  FIND-NEXT ********************************* -->
-    <FindNext v-if="searchString" />
+    <CustomFindNext v-if="searchString" />
     <!-- *****************************  FIND-NEXT ********************************* -->
     <ClientOnly>
       <SearchModal v-show="showSearchModal" />

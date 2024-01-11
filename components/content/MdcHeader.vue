@@ -23,7 +23,7 @@ const props = defineProps({
 })
 /*
 Use it like this anywhere:
-<WritingText
+<CustomSvgWritingText
   line1="This is an NUXT3 PWA!"
   line2="Theme by Kyrie Eleison!"
   line3="Download it from GitHub!"

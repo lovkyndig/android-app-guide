@@ -1,9 +1,10 @@
 import pkg from './package.json'
 
 export default defineAppConfig({
+  nuxtIcon: {},
   myLayer: {
     meta: {
-      name: 'Create Goocle App',
+      name: 'Android App Guide',
       version: pkg.version,
       description: pkg.description,
       homepage: pkg.homepage

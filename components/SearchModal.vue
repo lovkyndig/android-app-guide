@@ -141,10 +141,7 @@ const clearInputTextHandler = () => {
           class="flex justify-center items-center"
           @click="focusInputHandler"
         >
-          <svgo-tabler-search
-            class="shrink-0 w-6 h-6 text-gray-600"
-            :font-controlled="false"
-          />
+          <Icon name="tabler:search" class="shrink-0 w-6 h-6 text-gray-600" />
         </button>
 
         <input
@@ -169,10 +166,7 @@ const clearInputTextHandler = () => {
           class="flex sm:hidden justify-center items-center text-gray-200 hover:text-gray-400 transition-colors"
           @click="clearInputTextHandler"
         >
-          <svgo-ion-close-circle
-            class="w-6 h-6"
-            :font-controlled="false"
-          />
+          <Icon name="ion:close-circle" class="w-6 h-6" />
         </button>
       </div>
 
@@ -181,10 +175,7 @@ const clearInputTextHandler = () => {
           v-show="!inputText"
           class="p-16 flex flex-col justify-center items-center gap-y-8 text-purple-400"
         >
-          <svgo-fluent-text-t-28-filled
-            class="w-12 h-12"
-            :font-controlled="false"
-          />
+          <Icon name="fluent:text-t-28-filled" class="w-12 h-12" />
           <p v-if="online">Type to Search</p>
           <p v-else>Sorry! This search-functionality isn't offline-ready!</p>
         </div>
@@ -192,10 +183,7 @@ const clearInputTextHandler = () => {
           v-show="inputText && searchState === 'waiting'"
           class="p-16 flex flex-col justify-center items-center gap-y-8 text-purple-400"
         >
-          <svgo-fluent-slide-search-28-filled
-            class="w-12 h-12 animate-bounce"
-            :font-controlled="false"
-          />
+          <Icon name="fluent:slide-search-28-filled" class="w-12 h-12 animate-bounce" />
           <p>Searching</p>
         </div>
         <ul
@@ -228,10 +216,7 @@ const clearInputTextHandler = () => {
           v-show="inputText && searchState === 'solved' && !(searchResults.length > 0)"
           class="p-16 flex flex-col justify-center items-center gap-y-8 text-red-400"
         >
-          <svgo-fluent-mail-inbox-dismiss-28-filled
-            class="w-12 h-12"
-            :font-controlled="false"
-          />
+          <Icon name="fluent:mail-inbox-dismiss-28-filled" class="w-12 h-12" />
           <p>Oops! There is no result.</p>
         </div>
       </div>

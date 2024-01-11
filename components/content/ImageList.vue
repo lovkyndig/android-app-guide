@@ -159,10 +159,7 @@ const doubleClickHandler = (event) => {
           :class="showSidebar ? 'text-white bg-purple-500 hover:bg-purple-400' : 'text-purple-400 bg-purple-100 hover:text-purple-500'"
           @click="showSidebar = !showSidebar"
         >
-          <svgo-bi-layout-sidebar
-            class="w-4 h-4 -rotate-90 sm:rotate-0"
-            :font-controlled="false"
-          />
+          <Icon name="bi:layout-sidebar" class="-rotate-90 sm:rotate-0" />
         </button>
         <span class="text-center text-xs text-gray-400">
           {{ showImgIndex }}/{{ imgLength }}
@@ -181,10 +178,7 @@ const doubleClickHandler = (event) => {
           :class="scrollPos === 'start' ? 'opacity-30' : 'opacity-100'"
           @click="scrollTopHandler('start')"
         >
-          <svgo-material-symbols-vertical-align-top-rounded
-            class="w-4 h-4"
-            :font-controlled="false"
-          />
+          <Icon name="material-symbols:vertical-align-top-rounded" />
         </button>
         <button
           :disabled="scrollPos === 'end'"
@@ -192,10 +186,7 @@ const doubleClickHandler = (event) => {
           :class="scrollPos === 'end' ? 'opacity-30' : 'opacity-100'"
           @click="scrollTopHandler('end')"
         >
-          <svgo-material-symbols-vertical-align-bottom-rounded
-            class="w-4 h-4"
-            :font-controlled="false"
-          />
+          <Icon name="material-symbols:vertical-align-bottom-rounded" />
         </button>
 
         <button
@@ -204,10 +195,7 @@ const doubleClickHandler = (event) => {
           :class="scrollPos === 'start' ? 'opacity-30' : 'opacity-100'"
           @click="scrollLeftHandler('start')"
         >
-          <svgo-material-symbols-vertical-align-bottom-rounded
-            class="w-4 h-4 rotate-90"
-            :font-controlled="false"
-          />
+          <Icon name="material-symbols:vertical-align-bottom-rounded" class="rotate-90" />
         </button>
         <button
           :disabled="scrollPos === 'end'"
@@ -215,10 +203,7 @@ const doubleClickHandler = (event) => {
           :class="scrollPos === 'end' ? 'opacity-30' : 'opacity-100'"
           @click="scrollLeftHandler('end')"
         >
-          <svgo-material-symbols-vertical-align-top-rounded
-            class="w-4 h-4 rotate-90"
-            :font-controlled="false"
-          />
+          <Icon name="material-symbols:vertical-align-top-rounded" class="rotate-90" />
         </button>
       </div>
     </div>

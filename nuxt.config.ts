@@ -44,9 +44,9 @@ export default defineNuxtConfig({
     [resolve('./modules/copy-image-files'), { cleanFolders: ['public/article'] }],
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
+    '@pinia/nuxt',
     '@vite-pwa/nuxt',
-    'nuxt-svgo',
-    '@pinia/nuxt'
+    'nuxt-icon'
   ],
   // experimental: { payloadExtraction: false },
   pwa: {
@@ -92,12 +92,14 @@ export default defineNuxtConfig({
       // periodicSyncForUpdates: 300 // per 5 min for testing only
     }
   },
-  svgo: { autoImportPath: join(currentDir, './assets/icons') },
+  // svgo: { autoImportPath: join(currentDir, './assets/icons') },
+  /*
   components: [
     { path: './components/custom', pathPrefix: false },
     { path: './components/content', pathPrefix: false },
     { path: './components' }
   ],
+  */
   // https://content.nuxtjs.org
   content: {
     navigation: {
@@ -119,7 +121,12 @@ export default defineNuxtConfig({
     shim: false,
     typeCheck: true
   },
-  devtools: { enabled: false }
+  devtools: { enabled: false },
+  vue: {
+    compilerOptions: {
+      // isCustomElement: (tag) => ['IntroCard'].includes(tag)
+    }
+  }
 })
 
 /*

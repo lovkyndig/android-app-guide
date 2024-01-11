@@ -32,7 +32,7 @@ const timer = setTimeout(() => {
       crossorigin="anonymous"
       loading="lazy"
     />
-    <ConfirmCookies v-if="time2load" />
+    <CustomGiscusConfirmCookies v-if="time2load" />
   </span>
 </template>
 

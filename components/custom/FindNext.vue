@@ -110,9 +110,10 @@ Remember to insert the following tag in SearchModal.vue (line 208)
 
 <template>
   <div id="findNext" class="text-purple-600">
-    <svgo-custom-find-next
+    <Icon
       id="findNextImg"
-      class="text-xl"
+      name="icon-park:find"
+      class="w-10 h-10"
       alt="img"
       :font-controlled="false"
       @click="findNext()"
@@ -151,8 +152,8 @@ Remember to insert the following tag in SearchModal.vue (line 208)
 }
 @media only screen and (min-width: 640px) {
   #findNext {
-    top: 52px;
-    right: 2px
+    top: 20px;
+    right: 60px
   }
 }
 

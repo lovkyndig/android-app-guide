@@ -208,7 +208,7 @@ useSeoMeta({
         <div class="sm:px-10 py-16">
           <ContentDoc>
             <template #empty>
-              <IntroCard :avatar="appConfig.myLayer.avatar" />
+              <Mdcintro :avatar="appConfig.myLayer.avatar" />
             </template>
             <template #not-found>
               <h1 class="py-4 text-3xl sm:text-5xl font-bold text-center text-purple-500">
@@ -343,7 +343,7 @@ useSeoMeta({
       >
         <div class="flex py-8 justify-between">
           <div class="folder-nav-container flex sm:flex-wrap items-center gap-1 overflow-x-auto">
-            <svgo-ph-folder-open-fill class="shrink-0 w-6 h-6 text-yellow-400" :font-controlled="false" />
+            <Icon name="ph:folder-open-fill" class="shrink-0 w-6 h-6 text-yellow-400" />
             <div
               v-for="(folder, index) in folderNavArr"
               :key="folderNavArr.length>1 ? folder.path.join() : 'root'"
@@ -374,7 +374,7 @@ useSeoMeta({
               :title="item.title"
               class="self-start px-4 py-2 flex items-start gap-1 hover:text-blue-500 hover:bg-blue-100 transition-colors duration-300 rounded-lg"
             >
-              <FileType
+              <Icon
                 :name="getFileTypeIcon(item._type)"
                 class="shrink-0 w-6 h-6"
               /> <!--  w-6 h-6 OR text-xl -->

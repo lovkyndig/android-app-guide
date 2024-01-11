@@ -39,7 +39,8 @@ useSeoMeta({
                 target="_blank"
                 class="text-blue-500 hover:text-blue-600 transition-colors duration-300"
               > <!-- icon="iconoir:privacy-policy" class="w-36 h-36" -->
-                <SvgoCustomPrivacyPolicy class="text-green-400 text-9xl" />
+                <Icon name="iconoir:privacy-policy" class="text-green-400 w-36 h-36" />
+                <!-- <SvgoCustomPrivacyPolicy class="text-green-400 text-9xl" /> -->
                 <br>
                 <span class="flex flex-col items-center">Privacy Policy</span>
               </a>
@@ -52,7 +53,8 @@ useSeoMeta({
                 target="_blank"
                 class="text-blue-500 hover:text-blue-600 transition-colors duration-300"
               > <!-- icon="majesticons:sitemap" class="w-36 h-36" -->
-                <SvgoMajesticonsSitemap class="text-purple-400 text-9xl" />
+                <Icon name="majesticons:sitemap" class="text-purple-400 w-36 h-36" />
+                <!-- <SvgoMajesticonsSitemap class="text-purple-400 text-9xl" /> -->
                 <br>
                 <span class="flex flex-col items-center">Sitemap</span>
               </a>
@@ -65,7 +67,8 @@ useSeoMeta({
                 target="_blank"
                 class="text-blue-500 hover:text-blue-600 transition-colors duration-300"
               > <!-- icon="fa-solid:rss-square" class="w-36 h-36" -->
-                <SvgoFaSolidRssSquare class="text-orange-400 h-1/2 text-9xl" />
+                <Icon name="fa-solid:rss-square" class="text-orange-300 h-1/2 w-36 h-36" />
+                <!-- <SvgoFaSolidRssSquare class="text-orange-400 h-1/2 text-9xl" /> -->
                 <br>
                 <span class="flex flex-col items-center">Rss</span>
               </a>

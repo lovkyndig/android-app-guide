@@ -122,11 +122,15 @@ export default defineNuxtConfig({
     typeCheck: true
   },
   devtools: { enabled: false },
+  /*
   vue: {
     compilerOptions: {
-      // isCustomElement: (tag) => ['IntroCard'].includes(tag)
+      isCustomElement: (tag) => {
+        return tag.includes('Tab') // (return true)
+      }
     }
   }
+  */
 })
 
 /*

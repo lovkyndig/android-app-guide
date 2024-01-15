@@ -22,9 +22,9 @@ export default defineAppConfig({
     assetTypes: [],
     giscus: {
       repo: 'lovkyndig/android-app-guide',
-      repoId: 'R_kgDOKfRikA',
+      repoId: 'R_kgDOK7vZ6w',
       category: 'Comments',
-      categoryId: 'DIC_kwDOKfRikM4Capmi',
+      categoryId: 'DIC_kwDOK7vZ684CcXg5',
       mapping: 'url',
       reactionsEnabled: '1',
       emitMetadata: '0',

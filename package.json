@@ -1,6 +1,6 @@
 {
   "name": "@lovkyndig/android-app-guide",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0-rc.2-beta1",
   "type": "module",
   "main": "./nuxt.config.ts",
   "description": "⚡Nuxt layer with nuxt-content, full search-functionality, pwa and guide to how to publish to Google Play Store.",
@@ -27,7 +27,7 @@
     "d3-shape": "^3.2.0",
     "d3-zoom": "^3.0.0",
     "eslint": "^8.56.0",
-    "feed": "4.2.2",
+    "feed": "^4.2.2",
     "pagefind": "^1.0.4",
     "pinia": "^2.1.7",
     "sass": "^1.69.7",
